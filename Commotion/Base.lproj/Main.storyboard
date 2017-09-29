@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uAs-2Q-GOu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="rB5-LK-c32">
+            <objects>
+                <viewController id="uAs-2Q-GOu" customClass="GameViewController" customModule="Commotion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mv4-4J-m7v"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ra-ia-fff"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9m8-Lp-cfY" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJd-XG-b1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="995"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VyB-7d-1Av">
+            <objects>
+                <navigationController id="S9C-9n-bCc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jwp-ih-M4b">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CS1-bq-IUs" kind="relationship" relationship="rootViewController" id="cLE-FH-Z9N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8g-lH-cmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Sg-8j-HDH">
+            <objects>
+                <viewController id="CS1-bq-IUs" customClass="ViewController" customModule="SpriteKitLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ck-gx-ydG"/>
+                        <viewControllerLayoutGuide type="bottom" id="GFQ-9c-umF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JYw-0b-X9B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydk-k0-sYe">
+                                <rect key="frame" x="30" y="102" width="315" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="B13-Gy-HF0"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJR-Ma-1dI">
+                                <rect key="frame" x="39" y="306" width="306" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-0x-AtW">
+                                <rect key="frame" x="39" y="456" width="315" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="Xsw-Mz-zFk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryG-Cm-VxY">
+                                <rect key="frame" x="39" y="388" width="294" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="bMv-I9-Hku"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjp-cI-oC4">
+                                <rect key="frame" x="39" y="335" width="294" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ooA-tZ-Qnt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GFQ-9c-umF" firstAttribute="top" secondItem="xvP-0x-AtW" secondAttribute="bottom" constant="29" id="1Da-GV-hsy"/>
+                            <constraint firstItem="aJR-Ma-1dI" firstAttribute="trailing" secondItem="ydk-k0-sYe" secondAttribute="trailing" id="8Ye-mi-Zzm"/>
+                            <constraint firstAttribute="trailing" secondItem="ydk-k0-sYe" secondAttribute="trailing" constant="30" id="9GV-bT-Eoa"/>
+                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="leading" secondItem="ryG-Cm-VxY" secondAttribute="leading" id="BsK-sV-Mkj"/>
+                            <constraint firstItem="aJR-Ma-1dI" firstAttribute="top" secondItem="JYw-0b-X9B" secondAttribute="top" constant="306" id="Gyh-8p-xxL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xjp-cI-oC4" secondAttribute="trailing" constant="26" id="HMy-Ga-XWw"/>
+                            <constraint firstItem="xvP-0x-AtW" firstAttribute="leading" secondItem="ydk-k0-sYe" secondAttribute="leading" constant="9" id="OuF-Nn-ycm"/>
+                            <constraint firstItem="xvP-0x-AtW" firstAttribute="trailing" secondItem="aJR-Ma-1dI" secondAttribute="trailing" constant="9" id="VWE-b3-BgV"/>
+                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="trailing" secondItem="ryG-Cm-VxY" secondAttribute="trailing" id="d0t-wh-5yi"/>
+                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="top" secondItem="aJR-Ma-1dI" secondAttribute="bottom" constant="8" symbolic="YES" id="ehr-7O-kBj"/>
+                            <constraint firstItem="ryG-Cm-VxY" firstAttribute="top" secondItem="Xjp-cI-oC4" secondAttribute="bottom" constant="8" symbolic="YES" id="kUk-J8-PpS"/>
+                            <constraint firstItem="aJR-Ma-1dI" firstAttribute="leading" secondItem="JYw-0b-X9B" secondAttribute="leadingMargin" constant="23" id="qku-hq-Qsl"/>
+                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="leading" secondItem="aJR-Ma-1dI" secondAttribute="leading" id="r0Q-cJ-ZWm"/>
+                            <constraint firstItem="ydk-k0-sYe" firstAttribute="top" secondItem="1ck-gx-ydG" secondAttribute="bottom" constant="38" id="rUK-P1-ZBB"/>
+                            <constraint firstItem="ydk-k0-sYe" firstAttribute="leading" secondItem="JYw-0b-X9B" secondAttribute="leading" constant="30" id="uvg-pD-nzi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2rg-IG-Ou2"/>
+                    <connections>
+                        <outlet property="goalLabel" destination="aJR-Ma-1dI" id="KYw-x7-TAE"/>
+                        <outlet property="goalPicker" destination="ydk-k0-sYe" id="cc5-P4-Pae"/>
+                        <outlet property="movementLable" destination="xvP-0x-AtW" id="1c2-Te-aQc"/>
+                        <outlet property="todaysSteps" destination="ryG-Cm-VxY" id="fMg-PV-74x"/>
+                        <outlet property="yesterdaysSteps" destination="Xjp-cI-oC4" id="VPn-T1-hmH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lD-1c-1zk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="167"/>
+        </scene>
+    </scenes>
+</document>

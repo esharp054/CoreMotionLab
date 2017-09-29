@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "bee9dfc1c72abac89968891c9a5b0a11"
+build_time: [1506715718, 118227000]
+inputs:
+  "/Users/esharp2/MobileSensing/CoreMotionLab/Commotion/GameOverScene.swift": [1506715259, 0]
+  "/Users/esharp2/MobileSensing/CoreMotionLab/Commotion/ViewController.swift": [1506715450, 0]
+  "/Users/esharp2/MobileSensing/CoreMotionLab/Commotion/GameViewController.swift": [1506714942, 0]
+  "/Users/esharp2/MobileSensing/CoreMotionLab/Commotion/GameScene.swift": [1506715144, 0]
+  "/Users/esharp2/MobileSensing/CoreMotionLab/Commotion/AppDelegate.swift": [1506385785, 0]
+  "/Users/esharp2/MobileSensing/CoreMotionLab/Commotion/GameWinScene.swift": [1506715195, 0]
