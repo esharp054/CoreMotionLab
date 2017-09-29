@@ -15,6 +15,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let pedometer = CMPedometer();
     let motion = CMMotionManager()
     let userDefaults = UserDefaults.standard
+    var currentGaol = "0"
     var stepsYesterday: Float = 0.0
     var stepsToday: Float = 0.0 {
         willSet(newtotalSteps){
@@ -27,7 +28,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let calendar = Calendar.current
     var yesterday = Date();
     var today = Date();
-    let steps = ["-","1000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000"]
+    let steps = ["0","1000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000"]
     
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var stepLable: UILabel!
@@ -92,7 +93,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let goal = steps[goalPicker.selectedRow(inComponent: component)]
+        currentGaol = steps[goalPicker.selectedRow(inComponent: component)]
         self.userDefaults.set(goal, forKey: "goals")
+        checkGoalStatus()
         updateGoalLabel()
         
     }
@@ -102,7 +105,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func checkGoalStatus() {
-        if stepsYesterday >= userDefaults.float(forKey: "goals"){
+        if stepsToday >= Float(currentGaol)!{
             self.gameButton.isHidden = false
         }
         else{
