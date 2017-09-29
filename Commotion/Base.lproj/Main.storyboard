@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Uha-me-pSg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S9C-9n-bCc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,6 +36,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Uha-me-pSg" kind="relationship" relationship="rootViewController" id="3g2-YV-cQc"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8g-lH-cmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,13 +57,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czB-Vq-mUE">
-                                <rect key="frame" x="30" y="58" width="315" height="216"/>
+                                <rect key="frame" x="30" y="102" width="315" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="KOM-Xo-9Vx"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNb-vx-hTk">
-                                <rect key="frame" x="41" y="404" width="107" height="34"/>
+                                <rect key="frame" x="41" y="448" width="107" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Fjh-Pk-BIW"/>
                                 </constraints>
@@ -75,7 +78,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC1-cI-mIb">
-                                <rect key="frame" x="41" y="315" width="307" height="20"/>
+                                <rect key="frame" x="41" y="359" width="307" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="bzW-P7-8rR"/>
                                 </constraints>
@@ -91,9 +94,12 @@
                                 <state key="normal" title="Push to Play">
                                     <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="uAs-2Q-GOu" kind="show" id="YOf-Oh-13G"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kn-T9-qPU">
-                                <rect key="frame" x="41" y="387" width="137" height="24"/>
+                                <rect key="frame" x="41" y="343" width="137" height="112"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -120,6 +126,7 @@
                             <constraint firstItem="0Kn-T9-qPU" firstAttribute="centerY" secondItem="SOw-jH-ejb" secondAttribute="centerY" constant="65.5" id="wRM-jG-o1x"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Wa2-ok-kVR"/>
                     <connections>
                         <outlet property="gameButton" destination="EVX-3G-UDV" id="qEs-k7-Aga"/>
                         <outlet property="goalLabel" destination="QC1-cI-mIb" id="V91-wX-Icb"/>

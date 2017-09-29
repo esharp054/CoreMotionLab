@@ -16,8 +16,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var lives = defaults.integer(forKey: "steps")
-//        lives = lives/100
-        lives = 3
+        lives = lives/500
+//        lives = 3
         defaults.set(lives, forKey:"lives")
 
         //setup game scene

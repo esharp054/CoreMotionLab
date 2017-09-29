@@ -209,7 +209,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // 3
         livesLabel.position = CGPoint(
             x: frame.size.width / 2,
-            y: size.height - (20 + livesLabel.frame.size.height/2)
+            y: size.height - (80 + livesLabel.frame.size.height/2)
         )
         addChild(livesLabel)
 
