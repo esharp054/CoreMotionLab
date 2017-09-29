@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uAs-2Q-GOu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Uha-me-pSg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,61 +36,64 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="CS1-bq-IUs" kind="relationship" relationship="rootViewController" id="cLE-FH-Z9N"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8g-lH-cmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-332" y="167"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="4Sg-8j-HDH">
+        <scene sceneID="7vu-pz-pGu">
             <objects>
-                <viewController id="CS1-bq-IUs" customClass="ViewController" customModule="SpriteKitLab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Uha-me-pSg" customClass="ViewController" customModule="SpriteKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1ck-gx-ydG"/>
-                        <viewControllerLayoutGuide type="bottom" id="GFQ-9c-umF"/>
+                        <viewControllerLayoutGuide type="top" id="cdu-En-pGn"/>
+                        <viewControllerLayoutGuide type="bottom" id="RHe-Yc-HlX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JYw-0b-X9B">
+                    <view key="view" contentMode="scaleToFill" id="SOw-jH-ejb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydk-k0-sYe">
-                                <rect key="frame" x="30" y="102" width="315" height="131"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czB-Vq-mUE">
+                                <rect key="frame" x="30" y="58" width="315" height="216"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="131" id="B13-Gy-HF0"/>
+                                    <constraint firstAttribute="height" constant="216" id="KOM-Xo-9Vx"/>
                                 </constraints>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJR-Ma-1dI">
-                                <rect key="frame" x="39" y="306" width="306" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-0x-AtW">
-                                <rect key="frame" x="39" y="456" width="315" height="182"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNb-vx-hTk">
+                                <rect key="frame" x="41" y="404" width="107" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="182" id="Xsw-Mz-zFk"/>
+                                    <constraint firstAttribute="height" constant="34" id="Fjh-Pk-BIW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryG-Cm-VxY">
-                                <rect key="frame" x="39" y="388" width="294" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movement Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnF-rF-lfC">
+                                <rect key="frame" x="41" y="446" width="236" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC1-cI-mIb">
+                                <rect key="frame" x="41" y="315" width="307" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="bMv-I9-Hku"/>
+                                    <constraint firstAttribute="height" constant="20" id="bzW-P7-8rR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjp-cI-oC4">
-                                <rect key="frame" x="39" y="335" width="294" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVX-3G-UDV">
+                                <rect key="frame" x="145" y="507" width="85" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="ooA-tZ-Qnt"/>
+                                    <constraint firstAttribute="width" constant="85" id="8M4-V5-ZOS"/>
                                 </constraints>
+                                <state key="normal" title="Push to Play">
+                                    <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kn-T9-qPU">
+                                <rect key="frame" x="41" y="387" width="137" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -98,35 +101,37 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GFQ-9c-umF" firstAttribute="top" secondItem="xvP-0x-AtW" secondAttribute="bottom" constant="29" id="1Da-GV-hsy"/>
-                            <constraint firstItem="aJR-Ma-1dI" firstAttribute="trailing" secondItem="ydk-k0-sYe" secondAttribute="trailing" id="8Ye-mi-Zzm"/>
-                            <constraint firstAttribute="trailing" secondItem="ydk-k0-sYe" secondAttribute="trailing" constant="30" id="9GV-bT-Eoa"/>
-                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="leading" secondItem="ryG-Cm-VxY" secondAttribute="leading" id="BsK-sV-Mkj"/>
-                            <constraint firstItem="aJR-Ma-1dI" firstAttribute="top" secondItem="JYw-0b-X9B" secondAttribute="top" constant="306" id="Gyh-8p-xxL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Xjp-cI-oC4" secondAttribute="trailing" constant="26" id="HMy-Ga-XWw"/>
-                            <constraint firstItem="xvP-0x-AtW" firstAttribute="leading" secondItem="ydk-k0-sYe" secondAttribute="leading" constant="9" id="OuF-Nn-ycm"/>
-                            <constraint firstItem="xvP-0x-AtW" firstAttribute="trailing" secondItem="aJR-Ma-1dI" secondAttribute="trailing" constant="9" id="VWE-b3-BgV"/>
-                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="trailing" secondItem="ryG-Cm-VxY" secondAttribute="trailing" id="d0t-wh-5yi"/>
-                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="top" secondItem="aJR-Ma-1dI" secondAttribute="bottom" constant="8" symbolic="YES" id="ehr-7O-kBj"/>
-                            <constraint firstItem="ryG-Cm-VxY" firstAttribute="top" secondItem="Xjp-cI-oC4" secondAttribute="bottom" constant="8" symbolic="YES" id="kUk-J8-PpS"/>
-                            <constraint firstItem="aJR-Ma-1dI" firstAttribute="leading" secondItem="JYw-0b-X9B" secondAttribute="leadingMargin" constant="23" id="qku-hq-Qsl"/>
-                            <constraint firstItem="Xjp-cI-oC4" firstAttribute="leading" secondItem="aJR-Ma-1dI" secondAttribute="leading" id="r0Q-cJ-ZWm"/>
-                            <constraint firstItem="ydk-k0-sYe" firstAttribute="top" secondItem="1ck-gx-ydG" secondAttribute="bottom" constant="38" id="rUK-P1-ZBB"/>
-                            <constraint firstItem="ydk-k0-sYe" firstAttribute="leading" secondItem="JYw-0b-X9B" secondAttribute="leading" constant="30" id="uvg-pD-nzi"/>
+                            <constraint firstItem="QC1-cI-mIb" firstAttribute="leading" secondItem="0Kn-T9-qPU" secondAttribute="leading" id="0uz-a9-4gq"/>
+                            <constraint firstItem="BNb-vx-hTk" firstAttribute="top" secondItem="0Kn-T9-qPU" secondAttribute="bottom" constant="-7" id="9B1-zD-nkY"/>
+                            <constraint firstItem="GnF-rF-lfC" firstAttribute="trailing" secondItem="BNb-vx-hTk" secondAttribute="trailing" constant="129" id="Cqg-sz-OPc"/>
+                            <constraint firstItem="czB-Vq-mUE" firstAttribute="top" secondItem="cdu-En-pGn" secondAttribute="bottom" constant="38" id="EGs-vm-hev"/>
+                            <constraint firstItem="EVX-3G-UDV" firstAttribute="centerX" secondItem="QC1-cI-mIb" secondAttribute="centerX" constant="-7" id="Nw0-Qm-7BW"/>
+                            <constraint firstItem="czB-Vq-mUE" firstAttribute="centerX" secondItem="SOw-jH-ejb" secondAttribute="centerX" id="QIP-ep-id3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QC1-cI-mIb" secondAttribute="trailing" constant="11" id="UKI-qB-ROJ"/>
+                            <constraint firstItem="QC1-cI-mIb" firstAttribute="leading" secondItem="SOw-jH-ejb" secondAttribute="leadingMargin" constant="25" id="WiP-Q0-fzw"/>
+                            <constraint firstItem="BNb-vx-hTk" firstAttribute="leading" secondItem="SOw-jH-ejb" secondAttribute="leadingMargin" constant="25" id="cz9-Ke-v0I"/>
+                            <constraint firstItem="BNb-vx-hTk" firstAttribute="top" secondItem="QC1-cI-mIb" secondAttribute="bottom" constant="69" id="dXA-DB-8kE"/>
+                            <constraint firstItem="GnF-rF-lfC" firstAttribute="top" secondItem="BNb-vx-hTk" secondAttribute="bottom" constant="8" id="eKN-bS-0Wx"/>
+                            <constraint firstItem="GnF-rF-lfC" firstAttribute="leading" secondItem="0Kn-T9-qPU" secondAttribute="leading" id="hP9-rc-7Uy"/>
+                            <constraint firstItem="EVX-3G-UDV" firstAttribute="top" secondItem="GnF-rF-lfC" secondAttribute="bottom" constant="17" id="l2h-ax-M1P"/>
+                            <constraint firstItem="QC1-cI-mIb" firstAttribute="top" secondItem="czB-Vq-mUE" secondAttribute="bottom" constant="41" id="lA4-HT-3DJ"/>
+                            <constraint firstItem="czB-Vq-mUE" firstAttribute="leading" secondItem="SOw-jH-ejb" secondAttribute="leadingMargin" constant="14" id="lMw-2O-SAw"/>
+                            <constraint firstItem="RHe-Yc-HlX" firstAttribute="top" secondItem="EVX-3G-UDV" secondAttribute="bottom" constant="20" id="owm-bU-oUl"/>
+                            <constraint firstItem="0Kn-T9-qPU" firstAttribute="centerY" secondItem="SOw-jH-ejb" secondAttribute="centerY" constant="65.5" id="wRM-jG-o1x"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2rg-IG-Ou2"/>
                     <connections>
-                        <outlet property="goalLabel" destination="aJR-Ma-1dI" id="KYw-x7-TAE"/>
-                        <outlet property="goalPicker" destination="ydk-k0-sYe" id="cc5-P4-Pae"/>
-                        <outlet property="movementLable" destination="xvP-0x-AtW" id="1c2-Te-aQc"/>
-                        <outlet property="todaysSteps" destination="ryG-Cm-VxY" id="fMg-PV-74x"/>
-                        <outlet property="yesterdaysSteps" destination="Xjp-cI-oC4" id="VPn-T1-hmH"/>
+                        <outlet property="gameButton" destination="EVX-3G-UDV" id="qEs-k7-Aga"/>
+                        <outlet property="goalLabel" destination="QC1-cI-mIb" id="V91-wX-Icb"/>
+                        <outlet property="goalPicker" destination="czB-Vq-mUE" id="r3j-yS-6k0"/>
+                        <outlet property="movementLable" destination="GnF-rF-lfC" id="3i6-DY-m8E"/>
+                        <outlet property="todaysSteps" destination="BNb-vx-hTk" id="sF4-9r-LjU"/>
+                        <outlet property="yesterdaysSteps" destination="0Kn-T9-qPU" id="8wV-7a-JYm"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9lD-1c-1zk" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMI-wF-b3J" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="167"/>
+            <point key="canvasLocation" x="667.5" y="166.5"/>
         </scene>
     </scenes>
 </document>
